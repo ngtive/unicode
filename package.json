@@ -1,10 +1,10 @@
 {
-  "name": "unicode",
+  "name": "@ngtive/unicode",
   "version": "1.0.0",
   "description": "Mimt unicode service cli",
   "main": "index.js",
   "repository": "https://github.com/ngtive/unicode",
-  "author": "Ngtive",
+  "author": "ngtive",
   "license": "MIT",
   "private": false,
   "bin": {
