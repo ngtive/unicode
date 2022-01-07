@@ -1,0 +1,19 @@
+{
+  "name": "unicode",
+  "version": "1.0.0",
+  "description": "Mimt unicode service cli",
+  "main": "index.js",
+  "repository": "https://github.com/ngtive/unicode",
+  "author": "Ngtive",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "unicode": "./bin/unicode.js"
+  },
+  "dependencies": {
+    "@types/yargs": "^17.0.8",
+    "chalk": "2.4",
+    "soap": "^0.43.0",
+    "yargs": "^17.3.1"
+  }
+}
