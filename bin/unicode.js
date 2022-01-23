@@ -8,6 +8,7 @@ const argv = require("yargs/yargs")(process.argv.slice(2))
     .command('revoke <nationalcode>', 'Revoke contract with national_code')
     .command('register <nationalcode> <firstname> <lastname> <fathername> <phone> <email> <birthDate>', 'Register contract with national_code')
     .command('code <nationalcode>', 'Show national code unicode')
+    .command('reactive <nationalcode>', 'ReActive User')
 
     .alias('u', 'username')
     .alias('p', 'password')
@@ -68,6 +69,13 @@ unicode().then((unicode) => {
                 .then(result => {
                     if (result == 'error:InvalidPerson') return console.log(chalk.red.bold('Invalid Person'));
                     console.log(chalk.green.bold('Done!'));
+                });
+
+        case 'reactive':
+            unicode.ReActive(argv.nationalcode)
+                .then(result => {
+                    if (result == "'true'") return console.log(chalk.green.bold('Done!'));
+                    return console.log(chalk.red.bold(result));
                 });
     }
 });
