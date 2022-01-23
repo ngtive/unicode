@@ -74,7 +74,7 @@ unicode().then((unicode) => {
         case 'reactive':
             unicode.ReActive(argv.nationalcode)
                 .then(result => {
-                    if (result == "'true'") return console.log(chalk.green.bold('Done!'));
+                    if (result == "'true'" || result == 'true') return console.log(chalk.green.bold('Done!'));
                     return console.log(chalk.red.bold(result));
                 });
     }
