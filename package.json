@@ -1,6 +1,6 @@
 {
   "name": "@ngtive/unicode",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Mimt unicode service cli",
   "main": "index.js",
   "repository": "https://github.com/ngtive/unicode",
